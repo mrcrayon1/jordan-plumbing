@@ -17,14 +17,17 @@ const App: React.FC = () => {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className="min-h-screen bg-blue-100 flex flex-col items-center justify-center">
-  <h1 className="text-4xl font-bold text-blue-900">Tailwind is Working 🎉</h1>
-  <button className="mt-4 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
-    Click Me
-  </button>
-</div>
-
+    <>
+      <Header />
+      <Hero />
+      <WhyChooseUs />
+      <Services />
+      <Testimonials />
+      <CTASection />
+      <SocialProofBar />
+      <Footer />
+      <FreeEstimateModal isOpen={isModalOpen} onClose={closeModal} />
+    </>
   );
-};
-
+  
 export default App;
