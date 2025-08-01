@@ -29,5 +29,6 @@ const App: React.FC = () => {
       <FreeEstimateModal isOpen={isModalOpen} onClose={closeModal} />
     </>
   );
-  
+};
+
 export default App;
